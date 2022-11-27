@@ -139,7 +139,7 @@ margin-left: 0vw;
 }
 main{
     
-    height: 100vh;
+    height: auto;
     width: 100vw;
     text-align: center;
     }
@@ -153,8 +153,7 @@ position: inherit;
         display: grid;
         place-items: center;
         align-content: center;
-        min-height: 100vh;
-        min-width: 100vh;
+        max-width: 100vh;
     }
     
 .hid{
