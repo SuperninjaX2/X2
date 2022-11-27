@@ -1,0 +1,163 @@
+body{
+    
+}
+header{
+    background-image: url("images/02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    width: 100vw;
+    display: block;
+
+    
+}
+.spacer{
+    aspect-ratio: 960/400;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.layer1{
+    background-image: url('images/layer1.svg');
+    }
+#first{
+    animation-name: name;
+    animation-duration: 4s;
+    font-size: 70px;
+
+}
+@keyframes name{
+    0%{
+        margin-left: 50%;
+        color: red;
+    }
+    25%{
+        color: green;
+        font-size: 30px;
+    }
+    50%{
+        color: blue
+        font-size: 45px;
+    }
+    75%{
+        color: violet;
+        font-size: 70px;
+
+    }
+    100%{
+        color: black;
+        font-size: 60;
+    }
+}
+#second{
+    animation-name: second;
+    animation-duration: 4s;
+    font-size: 40px;
+    margin-right: 0%;
+    color: deepskyblue;
+
+    
+}
+@keyframes second{
+    0%{
+        margin-left: 100%;
+        color: lightskyblue;
+    }
+    25%{
+        color: deepskyblue;
+        font-size: 30px;
+    }
+    50%{
+        color: blue
+        font-size: 45px;
+    }
+    75%{
+        color: darkblue;
+        font-size: 70px;
+
+    }
+    100%{
+        color: deepskyblue;
+        font-size: 60;
+    }
+}
+#last{
+    animation-name: last;
+    animation-duration: 4s;
+    font-size: 70px;
+    margin-right: 0%;
+    color: lightgreen;
+
+    
+}
+@keyframes last{
+    0%{
+        margin-left: 80%;
+        color: yellow;
+    }
+    25%{
+        color: yellowgreen;
+        font-size: 30px;
+    }
+    50%{
+        color: palegreen;
+        font-size: 45px;
+    }
+    75%{
+        color: green;
+        font-size: 70px;
+
+    }
+    100%{
+        color: darkgreen;
+        font-size: 60;
+    }
+}
+#myProfile{
+width: 20%;
+height: 40vh;
+margin-top: 5vh;
+margin-left: 0vw;
+
+}
+main{
+    
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    }
+#layers{
+    margin-top: 0;
+    margin-left: 0;
+    margin: 0 auto;
+position: inherit;
+    }
+    section{
+        display: grid;
+        place-items: center;
+        align-content: center;
+        min-height: 100vh;
+    }
+    section::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        background-color: linear-gradient(to top,lightskyblue,transparent);
+        z-index: 1000;
+    }
+.hid{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 2s ;
+    
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    
+}
