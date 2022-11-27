@@ -2,11 +2,14 @@ body{
     background-color: white;
     max-width:100vh;
     width:100vh;
-
 display: block;
 }
 header{
     background-image:url('images/layer3.svg') ;
+     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
     height: 30vh;
     width: 100vw;
     display: block;
@@ -20,14 +23,7 @@ header{
     background-position: center;
     background-size: cover;
 }
-.spacer2{
-    aspect-ratio: 960/400;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin-top: 10;
-}
+
 .layer1{
     background-image: url('images/layer4.svg');
     }
@@ -139,10 +135,12 @@ margin-left: 0vw;
 
 }
 main{
-    
+    position: relative;
+    display: block;
     height: auto;
     width: 100vw;
     text-align: center;
+    overflow:none;
     }
 #layers{
     margin-top: 0;
