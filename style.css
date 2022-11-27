@@ -151,8 +151,7 @@ position: inherit;
         place-items: center;
         align-content: center;
         min-height: 100vh;
-        border: none;
-        overflow-x: hidden;
+        min-width: 100vh;
     }
     
 .hid{
