@@ -1,5 +1,8 @@
 body{
     background-color: white;
+    max-width:100vh;
+    width:100vh;
+    height:auto;
 }
 header{
     background-image:url('images/layer3.svg') ;
