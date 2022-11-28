@@ -1,164 +1,71 @@
-body{
-    background-color: white;
-    max-width:100vh;
-    width:100vh;
-display: block;
+body {
+  padding-bottom: 20px;
 }
-header{
-   
-    
+
+.navbar {
+  margin-bottom: 20px;
 }
+
 .spacer{
     aspect-ratio: 960/400;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    height: 100vh;
 }
-
+.spacer2{
+    aspect-ratio: 960/400;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 10;
+}
+nav{
+    background-color: black;
+}
 .layer1{
     background-image: url('images/layer4.svg');
+    text-align: center;
     }
     .layer2{
+        text-align: center;
     background-image: url('images/layer3.svg');
     }
     .layer3{
+        text-align: center;
 background-image: url('images/bla.svg');
     }
-#first{
-    animation-name: name;
-    animation-duration: 4s;
-    font-size: 70px;
-
-
+    #pp{
+        background-color: white;
+        align-items: center;
+        margin-top: 5vh;
+        margin-left: 0vw;
+        display: block;
+        width: 100vw;
+    }
+    .img-rounded{
+        margin-left: 40vw;
+    }
+    .btn{
+        margin-top: 2vh;
+        font-size: 1.5rem;
+        margin-left: 42vw;
+    }
+    span{
+        padding: 20px;
+    }
+img{
+    width: 20vw;
+    border-radius: 100%;
 }
-@keyframes name{
-    0%{
-        margin-left: 50%;
-        color: red;
-    }
-    25%{
-        color: green;
-        font-size: 30px;
-    }
-    50%{
-        color: blue
-        font-size: 45px;
-    }
-    75%{
-        color: violet;
-        font-size: 70px;
-
-    }
-    100%{
-        color: black;
-        font-size: 60;
-    }
-}
-#second{
-    animation-name: second;
-    animation-duration: 4s;
-    font-size: 40px;
-    margin-right: 0%;
-    color: deepskyblue;
-
-    
-}
-@keyframes second{
-    0%{
-        margin-left: 100%;
-        color: lightskyblue;
-    }
-    25%{
-        color: deepskyblue;
-        font-size: 30px;
-    }
-    50%{
-        color: blue
-        font-size: 45px;
-    }
-    75%{
-        color: darkblue;
-        font-size: 70px;
-
-    }
-    100%{
-        color: deepskyblue;
-        font-size: 60;
-    }
-}
-#last{
-    animation-name: last;
-    animation-duration: 4s;
-    font-size: 70px;
-    margin-right: 0%;
-    color: orange;
-
-    
-}
-@keyframes last{
-    0%{
-        margin-left: 80%;
-        color: yellow;
-    }
-    25%{
-        color: yellowgreen;
-        font-size: 30px;
-    }
-    50%{
-        color: palegreen;
-        font-size: 45px;
-    }
-    75%{
-        color: green;
-        font-size: 70px;
-
-    }
-    100%{
-        color: darkgreen;
-        font-size: 60;
-    }
-}
-#myProfile{
-width: 40%;
-height: auto;
-margin-top: 5vh;
-margin-left: 0vw;
-
-}
-main{
-    position: relative;
-    display: block;
-    height: auto;
-    width: 100vw;
+ul li{
     text-align: center;
-    overflow:none;
-    }
-#layers{
-    margin-top: 0;
-    margin-left: 0;
-    margin: 0 auto;
-position: inherit;
-    }
-    section{
-        display: grid;
-        place-items: center;
-        align-content: center;
-        max-width: 100vh;
-        max-height: 100%;
-        height: 100vh;
-    }
+    text-decoration: none;
+    margin-right: 0vw;
     
-.hid{
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-100%);
-    transition: all 2s ;
-    background-color: transparent;
 }
-.show{
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-    
+#call{
+    margin-left: 0vw;
 }
