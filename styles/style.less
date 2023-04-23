@@ -1,0 +1,892 @@
+
+// Mats Gothe
+// design.gothe.se
+// 2020
+//
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+//
+// Carbon Color Specifications
+//
+@red-100: #2c080a;
+@red-90: #4f0408;
+@red-80: #750e13;
+@red-70: #a51920;
+@red-60: #da1e28;
+@red-50: #fb4b53;
+@red-40: #ff767c;
+@red-30: #ffa4a9;
+@red-20: #fcd0d3;
+@red-10: #fff0f1;
+
+@blue-100: #051243;
+@blue-90: #051b75;
+@blue-80: #0530ad;
+@blue-70: #054ada;
+@blue-60: #0062ff;
+@blue-50: #418cff;
+@blue-40: #6ea6ff;
+@blue-30: #97c1ff;
+@blue-20: #c9deff;
+@blue-10: #edf4ff;
+
+@cyan-100: #07192b;
+@cyan-90: #002749;
+@cyan-80: #003d73;
+@cyan-70: #0058a1;
+@cyan-60: #0072c3;
+@cyan-50: #1193e8;
+@cyan-40: #30b0ff;
+@cyan-30: #6ccaff;
+@cyan-20: #b3e6ff;
+@cyan-10: #e3f6ff;
+
+@teal-100: #081a1c;
+@teal-90: #022b30;
+@teal-80: #004144;
+@teal-70: #005d5d;
+@teal-60: #007d79;
+@teal-50: #009d9a;
+@teal-40: #08bdba;
+@teal-30: #3ddbd9;
+@teal-20: #9ef0f0;
+@teal-10: #d9fbfb;
+
+@black: #000000;
+@gray-100: #171717;
+@gray-90: #252525;
+@gray-80: #3d3d3d;
+@gray-70: #565656;
+@gray-60: #6f6f6f;
+@gray-50: #8c8c8c;
+@gray-40: #a4a4a4;
+@gray-30: #bebebe;
+@gray-20: #dcdcdc;
+@gray-10: #f3f3f3;
+@white: #ffffff;
+
+@cool-gray-100: #121619;
+@cool-gray-90: #21272a;
+@cool-gray-80: #343a3f;
+@cool-gray-70: #4d5358;
+@cool-gray-60: #697077;
+@cool-gray-50: #878d96;
+@cool-gray-40: #a2a9b0;
+@cool-gray-30: #c1c7cd;
+@cool-gray-20: #dde1e6;
+@cool-gray-10: #f2f4f8;
+
+@warm-gray-100: #171414;
+@warm-gray-90: #272525;
+@warm-gray-80: #3c3838;
+@warm-gray-70: #565151;
+@warm-gray-60: #736f6f;
+@warm-gray-50: #8f8b8b;
+@warm-gray-40: #ada8a8;
+@warm-gray-30: #cac5c4;
+@warm-gray-20: #e5e0df;
+@warm-gray-10: #f7f3f2;
+
+@green-100: #071908;
+@green-90: #022d0d;
+@green-80: #044317;
+@green-70: #0e6027;
+@green-60: #198038;
+@green-50: #24a148;
+@green-40: #42be65;
+@green-30: #6fdc8c;
+@green-20: #a7f0ba;
+@green-10: #defbe6;
+
+@purple-100: #1c0f30;
+@purple-90: #31135e;
+@purple-80: #491d8b;
+@purple-70: #6929c4;
+@purple-60: #8a3ffc;
+@purple-50: #a56eff;
+@purple-40: #be95ff;
+@purple-30: #d4bbff;
+@purple-20: #e8daff;
+@purple-10: #f6f2ff;
+
+@magenta-100: #2a0a18;
+@magenta-90: #510224;
+@magenta-80: #740937;
+@magenta-70: #9f1853;
+@magenta-60: #d12771;
+@magenta-50: #ee5396;
+@magenta-40: #ff7eb6;
+@magenta-30: #ffafd2;
+@magenta-20: #ffd6e8;
+@magenta-10: #fff0f7;
+
+@yellow: #f1c21b;
+
+@alert-60: #da1e28;
+@alert-50: #24a148;
+@alert-40: #ff832b;
+@alert-20: #f1c21b;
+
+// Carbon White Theme
+// https://www.carbondesignsystem.com/guidelines/color/usage
+
+// Core color tokens
+//
+@ui-background: @white; 	  	   // Default page background
+@interactive-01: @blue-60; 	  	 // Primary interactive color. Primary buttons
+@interactive-02: @gray-80; 	  	 // Secondary interactive color. Secondary button
+@interactive-03: @blue-60; 	  	 // Tertiary button
+@interactive-04: @blue-60; 		   // Selected elements. Active elements. Accent icons
+@danger: @red-60; 				       // Danger button background
+@ui-01: @gray-10; 				       // Container background on @ui-background. Secondary page background
+@ui-02: @white; 				         // Container background on @ui-01. ‘Light’ variant background
+@ui-03: @gray-20; 				       // Subtle border. Tertiary background
+@ui-04: @gray-50; 				       // Medium contrast border
+@ui-05: @gray-100; 		  		     // High contrast border. Emphasis elements
+@text-01: @gray-100; 	  		     // Primary text. Body copy. Headers. Hover text color for @text-02
+@text-02: @gray-80; 		  	     // Secondary text. Input labels
+@text-03: @gray-40; 			       // Placeholder text
+@text-04: @white; 				       // Text on interactive colors
+@text-05: @gray-60; 			       // Tertiary text. Help text
+@link-01: @blue-60; 			       // Primary links. Ghost button
+@inverse-link: @blue-40; 		     // Links on @inverse-02 backgrounds
+@icon-01: @gray-100; 			       // Primary icons
+@icon-02: @gray-70; 			       // Secondary icons
+@icon-03: @white; 			  	     // Icons on interactive colors. Icons on non-ui colors
+@field-01: @gray-10; 		  	     // Default input fields. Fields on @ui-backgrounds
+@field-02: @white; 				       // 'Light' variant input fields. Fields on @ui-02 backgrounds
+@inverse-01: @white; 			       // Inverse text color. Inverse icon color
+@inverse-02: @gray-80; 		  	   // High contrast backgrounds. High contrast element
+@support-01: @red-60; 		  	   // Error
+@support-02: @green-50; 	  	   // Success
+@support-03: @yellow; 		  	   // Warning. Yellow
+@support-04: @blue-70; 			     // Information
+@inverse-support-01: @red-50;    // Danger in high contrast moments
+@inverse-support-02: @green-40;  // Success in high contrast moments
+@inverse-support-03: @yellow; 	 // Warning in high contrast moments
+@inverse-support-04: @blue-50; 	 // Information in high contrast moments
+@overlay-01: @gray-100; 		     // Background overlay. @50%
+
+// Interactive color tokens
+//
+@focus: @blue-60; 				       // Focus border. Focus underline
+@inverse-focus-ui: @white; 		   // Focus on high contrast moments
+@hover-primary: @blue-60; 		   // @interactive-01 hover
+@hover-primary-text: @blue-70; 	 // @interactive-01 text hover
+@hover-secondary: @gray-80; 	   // @interactive-02 hover
+@hover-tertiary: @blue-60; 		   // @interactive-03 hover, @inverse-01 hover
+@hover-ui: @gray-10; 			       // @ui-01 hover, @ui-02 hover, Transparent background hover
+@hover-selected-ui: @gray-20; 	 // Selected row hover
+@hover-danger: @red-60; 		     // @support-01 hover, Danger hover
+@hover-row: @gray-10; 			     // Row hover
+@inverse-hover-ui: @gray-80; 	   // Hover for @inverse-02
+@active-primary: @blue-80;		   // @interactive-01 active
+@active-secondary: @gray-60; 	   // @interactive-02 active, @inverse-01 active
+@active-tertiary: @blue-80;		   // @interactive-03 active
+@active-ui: @gray-30;			       // @ui-01 active, @ui-02 active
+@active-danger: @red-80;		     // @support-01 active, Danger active
+@selected-ui: @gray-20; 		     // Selected UI elements
+@highlight: @blue-20;			       // @interactive-01 highlight
+@skeleton-01: @gray-10; 	       // Skeleton state of graphics
+@skeleton-02: @gray-30; 		     // Skeleton state of texts
+@visited-link: @purple-60; 		   // Visited links
+@disabled-01: @gray-10; 		     // Disabled fields, backgrounds, border
+@disabled-02: @gray-30; 		     // Disabled elements and text on @disabled-01, label, icons, border
+@disabled-03: @gray-50; 		     // Disabled text and icons on @disabled-02
+
+// Spacing and Layout Scales
+//
+@spacing-01: 2px;
+@spacing-02: 4px;
+@spacing-03: 8px;
+@spacing-04: 12px;
+@spacing-05: 16px;
+@spacing-06: 24px;
+@spacing-07: 32px;
+@spacing-08: 40px;
+@spacing-09: 48px;
+
+@spacing-3xs: 2px;
+@spacing-2xs: 4px;
+@spacing-xs: 8px;
+@spacing-sm: 12px;
+@spacing-md: 16px;
+@spacing-lg: 24px;
+@spacing-xl: 32px;
+@spacing-2xl: 40px;
+@spacing-3xl: 48px;
+
+@layout-01: 16px;
+@layout-02: 24px;
+@layout-03: 32px;
+@layout-04: 48px;
+@layout-05: 64px;
+@layout-06: 96px;
+@layout-07: 160px;
+
+@layout-2xs: 16px;
+@layout-xs: 24px;
+@layout-sms: 32px;
+@layout-md: 48px;
+@layout-lg: 64px;
+@layout-xl: 96px;
+@layout-2xl: 160px;
+
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+//
+// Media sizes
+
+@sm: ~"(min-width: 320px)";
+@md: ~"(min-width: 672px)";
+@lg: ~"(min-width: 1056px)";
+@xlg: ~"(min-width: 1312px)";
+@max: ~"(min-width: 1584px)"
+// Mats Gothe
+// design.gothe.se
+// 2020
+//
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+//
+// Carbon Color Specifications
+//
+@red-100: #2c080a;
+@red-90: #4f0408;
+@red-80: #750e13;
+@red-70: #a51920;
+@red-60: #da1e28;
+@red-50: #fb4b53;
+@red-40: #ff767c;
+@red-30: #ffa4a9;
+@red-20: #fcd0d3;
+@red-10: #fff0f1;
+
+@blue-100: #051243;
+@blue-90: #051b75;
+@blue-80: #0530ad;
+@blue-70: #054ada;
+@blue-60: #0062ff;
+@blue-50: #418cff;
+@blue-40: #6ea6ff;
+@blue-30: #97c1ff;
+@blue-20: #c9deff;
+@blue-10: #edf4ff;
+
+@cyan-100: #07192b;
+@cyan-90: #002749;
+@cyan-80: #003d73;
+@cyan-70: #0058a1;
+@cyan-60: #0072c3;
+@cyan-50: #1193e8;
+@cyan-40: #30b0ff;
+@cyan-30: #6ccaff;
+@cyan-20: #b3e6ff;
+@cyan-10: #e3f6ff;
+
+@teal-100: #081a1c;
+@teal-90: #022b30;
+@teal-80: #004144;
+@teal-70: #005d5d;
+@teal-60: #007d79;
+@teal-50: #009d9a;
+@teal-40: #08bdba;
+@teal-30: #3ddbd9;
+@teal-20: #9ef0f0;
+@teal-10: #d9fbfb;
+
+@black: #000000;
+@gray-100: #171717;
+@gray-90: #252525;
+@gray-80: #3d3d3d;
+@gray-70: #565656;
+@gray-60: #6f6f6f;
+@gray-50: #8c8c8c;
+@gray-40: #a4a4a4;
+@gray-30: #bebebe;
+@gray-20: #dcdcdc;
+@gray-10: #f3f3f3;
+@white: #ffffff;
+
+@cool-gray-100: #121619;
+@cool-gray-90: #21272a;
+@cool-gray-80: #343a3f;
+@cool-gray-70: #4d5358;
+@cool-gray-60: #697077;
+@cool-gray-50: #878d96;
+@cool-gray-40: #a2a9b0;
+@cool-gray-30: #c1c7cd;
+@cool-gray-20: #dde1e6;
+@cool-gray-10: #f2f4f8;
+
+@warm-gray-100: #171414;
+@warm-gray-90: #272525;
+@warm-gray-80: #3c3838;
+@warm-gray-70: #565151;
+@warm-gray-60: #736f6f;
+@warm-gray-50: #8f8b8b;
+@warm-gray-40: #ada8a8;
+@warm-gray-30: #cac5c4;
+@warm-gray-20: #e5e0df;
+@warm-gray-10: #f7f3f2;
+
+@green-100: #071908;
+@green-90: #022d0d;
+@green-80: #044317;
+@green-70: #0e6027;
+@green-60: #198038;
+@green-50: #24a148;
+@green-40: #42be65;
+@green-30: #6fdc8c;
+@green-20: #a7f0ba;
+@green-10: #defbe6;
+
+@purple-100: #1c0f30;
+@purple-90: #31135e;
+@purple-80: #491d8b;
+@purple-70: #6929c4;
+@purple-60: #8a3ffc;
+@purple-50: #a56eff;
+@purple-40: #be95ff;
+@purple-30: #d4bbff;
+@purple-20: #e8daff;
+@purple-10: #f6f2ff;
+
+@magenta-100: #2a0a18;
+@magenta-90: #510224;
+@magenta-80: #740937;
+@magenta-70: #9f1853;
+@magenta-60: #d12771;
+@magenta-50: #ee5396;
+@magenta-40: #ff7eb6;
+@magenta-30: #ffafd2;
+@magenta-20: #ffd6e8;
+@magenta-10: #fff0f7;
+
+@yellow: #f1c21b;
+
+@alert-60: #da1e28;
+@alert-50: #24a148;
+@alert-40: #ff832b;
+@alert-20: #f1c21b;
+
+// Carbon White Theme
+// https://www.carbondesignsystem.com/guidelines/color/usage
+
+// Core color tokens
+//
+@ui-background: @white; 	  	   // Default page background
+@interactive-01: @blue-60; 	  	 // Primary interactive color. Primary buttons
+@interactive-02: @gray-80; 	  	 // Secondary interactive color. Secondary button
+@interactive-03: @blue-60; 	  	 // Tertiary button
+@interactive-04: @blue-60; 		   // Selected elements. Active elements. Accent icons
+@danger: @red-60; 				       // Danger button background
+@ui-01: @gray-10; 				       // Container background on @ui-background. Secondary page background
+@ui-02: @white; 				         // Container background on @ui-01. ‘Light’ variant background
+@ui-03: @gray-20; 				       // Subtle border. Tertiary background
+@ui-04: @gray-50; 				       // Medium contrast border
+@ui-05: @gray-100; 		  		     // High contrast border. Emphasis elements
+@text-01: @gray-100; 	  		     // Primary text. Body copy. Headers. Hover text color for @text-02
+@text-02: @gray-80; 		  	     // Secondary text. Input labels
+@text-03: @gray-40; 			       // Placeholder text
+@text-04: @white; 				       // Text on interactive colors
+@text-05: @gray-60; 			       // Tertiary text. Help text
+@link-01: @blue-60; 			       // Primary links. Ghost button
+@inverse-link: @blue-40; 		     // Links on @inverse-02 backgrounds
+@icon-01: @gray-100; 			       // Primary icons
+@icon-02: @gray-70; 			       // Secondary icons
+@icon-03: @white; 			  	     // Icons on interactive colors. Icons on non-ui colors
+@field-01: @gray-10; 		  	     // Default input fields. Fields on @ui-backgrounds
+@field-02: @white; 				       // 'Light' variant input fields. Fields on @ui-02 backgrounds
+@inverse-01: @white; 			       // Inverse text color. Inverse icon color
+@inverse-02: @gray-80; 		  	   // High contrast backgrounds. High contrast element
+@support-01: @red-60; 		  	   // Error
+@support-02: @green-50; 	  	   // Success
+@support-03: @yellow; 		  	   // Warning. Yellow
+@support-04: @blue-70; 			     // Information
+@inverse-support-01: @red-50;    // Danger in high contrast moments
+@inverse-support-02: @green-40;  // Success in high contrast moments
+@inverse-support-03: @yellow; 	 // Warning in high contrast moments
+@inverse-support-04: @blue-50; 	 // Information in high contrast moments
+@overlay-01: @gray-100; 		     // Background overlay. @50%
+
+// Interactive color tokens
+//
+@focus: @blue-60; 				       // Focus border. Focus underline
+@inverse-focus-ui: @white; 		   // Focus on high contrast moments
+@hover-primary: @blue-60; 		   // @interactive-01 hover
+@hover-primary-text: @blue-70; 	 // @interactive-01 text hover
+@hover-secondary: @gray-80; 	   // @interactive-02 hover
+@hover-tertiary: @blue-60; 		   // @interactive-03 hover, @inverse-01 hover
+@hover-ui: @gray-10; 			       // @ui-01 hover, @ui-02 hover, Transparent background hover
+@hover-selected-ui: @gray-20; 	 // Selected row hover
+@hover-danger: @red-60; 		     // @support-01 hover, Danger hover
+@hover-row: @gray-10; 			     // Row hover
+@inverse-hover-ui: @gray-80; 	   // Hover for @inverse-02
+@active-primary: @blue-80;		   // @interactive-01 active
+@active-secondary: @gray-60; 	   // @interactive-02 active, @inverse-01 active
+@active-tertiary: @blue-80;		   // @interactive-03 active
+@active-ui: @gray-30;			       // @ui-01 active, @ui-02 active
+@active-danger: @red-80;		     // @support-01 active, Danger active
+@selected-ui: @gray-20; 		     // Selected UI elements
+@highlight: @blue-20;			       // @interactive-01 highlight
+@skeleton-01: @gray-10; 	       // Skeleton state of graphics
+@skeleton-02: @gray-30; 		     // Skeleton state of texts
+@visited-link: @purple-60; 		   // Visited links
+@disabled-01: @gray-10; 		     // Disabled fields, backgrounds, border
+@disabled-02: @gray-30; 		     // Disabled elements and text on @disabled-01, label, icons, border
+@disabled-03: @gray-50; 		     // Disabled text and icons on @disabled-02
+
+// Spacing and Layout Scales
+//
+@spacing-01: 2px;
+@spacing-02: 4px;
+@spacing-03: 8px;
+@spacing-04: 12px;
+@spacing-05: 16px;
+@spacing-06: 24px;
+@spacing-07: 32px;
+@spacing-08: 40px;
+@spacing-09: 48px;
+
+@spacing-3xs: 2px;
+@spacing-2xs: 4px;
+@spacing-xs: 8px;
+@spacing-sm: 12px;
+@spacing-md: 16px;
+@spacing-lg: 24px;
+@spacing-xl: 32px;
+@spacing-2xl: 40px;
+@spacing-3xl: 48px;
+
+@layout-01: 16px;
+@layout-02: 24px;
+@layout-03: 32px;
+@layout-04: 48px;
+@layout-05: 64px;
+@layout-06: 96px;
+@layout-07: 160px;
+
+@layout-2xs: 16px;
+@layout-xs: 24px;
+@layout-sms: 32px;
+@layout-md: 48px;
+@layout-lg: 64px;
+@layout-xl: 96px;
+@layout-2xl: 160px;
+
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+//
+// Media sizes
+
+@sm: ~"(min-width: 320px)";
+@md: ~"(min-width: 672px)";
+@lg: ~"(min-width: 1056px)";
+@xlg: ~"(min-width: 1312px)";
+@max: ~"(min-width: 1584px)"
+// Mats Gothe
+// design.gothe.se
+// 2020
+//
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+//
+// Carbon Color Specifications
+//
+@red-100: #2c080a;
+@red-90: #4f0408;
+@red-80: #750e13;
+@red-70: #a51920;
+@red-60: #da1e28;
+@red-50: #fb4b53;
+@red-40: #ff767c;
+@red-30: #ffa4a9;
+@red-20: #fcd0d3;
+@red-10: #fff0f1;
+
+@blue-100: #051243;
+@blue-90: #051b75;
+@blue-80: #0530ad;
+@blue-70: #054ada;
+@blue-60: #0062ff;
+@blue-50: #418cff;
+@blue-40: #6ea6ff;
+@blue-30: #97c1ff;
+@blue-20: #c9deff;
+@blue-10: #edf4ff;
+
+@cyan-100: #07192b;
+@cyan-90: #002749;
+@cyan-80: #003d73;
+@cyan-70: #0058a1;
+@cyan-60: #0072c3;
+@cyan-50: #1193e8;
+@cyan-40: #30b0ff;
+@cyan-30: #6ccaff;
+@cyan-20: #b3e6ff;
+@cyan-10: #e3f6ff;
+
+@teal-100: #081a1c;
+@teal-90: #022b30;
+@teal-80: #004144;
+@teal-70: #005d5d;
+@teal-60: #007d79;
+@teal-50: #009d9a;
+@teal-40: #08bdba;
+@teal-30: #3ddbd9;
+@teal-20: #9ef0f0;
+@teal-10: #d9fbfb;
+
+@black: #000000;
+@gray-100: #171717;
+@gray-90: #252525;
+@gray-80: #3d3d3d;
+@gray-70: #565656;
+@gray-60: #6f6f6f;
+@gray-50: #8c8c8c;
+@gray-40: #a4a4a4;
+@gray-30: #bebebe;
+@gray-20: #dcdcdc;
+@gray-10: #f3f3f3;
+@white: #ffffff;
+
+@cool-gray-100: #121619;
+@cool-gray-90: #21272a;
+@cool-gray-80: #343a3f;
+@cool-gray-70: #4d5358;
+@cool-gray-60: #697077;
+@cool-gray-50: #878d96;
+@cool-gray-40: #a2a9b0;
+@cool-gray-30: #c1c7cd;
+@cool-gray-20: #dde1e6;
+@cool-gray-10: #f2f4f8;
+
+@warm-gray-100: #171414;
+@warm-gray-90: #272525;
+@warm-gray-80: #3c3838;
+@warm-gray-70: #565151;
+@warm-gray-60: #736f6f;
+@warm-gray-50: #8f8b8b;
+@warm-gray-40: #ada8a8;
+@warm-gray-30: #cac5c4;
+@warm-gray-20: #e5e0df;
+@warm-gray-10: #f7f3f2;
+
+@green-100: #071908;
+@green-90: #022d0d;
+@green-80: #044317;
+@green-70: #0e6027;
+@green-60: #198038;
+@green-50: #24a148;
+@green-40: #42be65;
+@green-30: #6fdc8c;
+@green-20: #a7f0ba;
+@green-10: #defbe6;
+
+@purple-100: #1c0f30;
+@purple-90: #31135e;
+@purple-80: #491d8b;
+@purple-70: #6929c4;
+@purple-60: #8a3ffc;
+@purple-50: #a56eff;
+@purple-40: #be95ff;
+@purple-30: #d4bbff;
+@purple-20: #e8daff;
+@purple-10: #f6f2ff;
+
+@magenta-100: #2a0a18;
+@magenta-90: #510224;
+@magenta-80: #740937;
+@magenta-70: #9f1853;
+@magenta-60: #d12771;
+@magenta-50: #ee5396;
+@magenta-40: #ff7eb6;
+@magenta-30: #ffafd2;
+@magenta-20: #ffd6e8;
+@magenta-10: #fff0f7;
+
+@yellow: #f1c21b;
+
+@alert-60: #da1e28;
+@alert-50: #24a148;
+@alert-40: #ff832b;
+@alert-20: #f1c21b;
+
+// Carbon White Theme
+// https://www.carbondesignsystem.com/guidelines/color/usage
+
+// Core color tokens
+//
+@ui-background: @white; 	  	   // Default page background
+@interactive-01: @blue-60; 	  	 // Primary interactive color. Primary buttons
+@interactive-02: @gray-80; 	  	 // Secondary interactive color. Secondary button
+@interactive-03: @blue-60; 	  	 // Tertiary button
+@interactive-04: @blue-60; 		   // Selected elements. Active elements. Accent icons
+@danger: @red-60; 				       // Danger button background
+@ui-01: @gray-10; 				       // Container background on @ui-background. Secondary page background
+@ui-02: @white; 				         // Container background on @ui-01. ‘Light’ variant background
+@ui-03: @gray-20; 				       // Subtle border. Tertiary background
+@ui-04: @gray-50; 				       // Medium contrast border
+@ui-05: @gray-100; 		  		     // High contrast border. Emphasis elements
+@text-01: @gray-100; 	  		     // Primary text. Body copy. Headers. Hover text color for @text-02
+@text-02: @gray-80; 		  	     // Secondary text. Input labels
+@text-03: @gray-40; 			       // Placeholder text
+@text-04: @white; 				       // Text on interactive colors
+@text-05: @gray-60; 			       // Tertiary text. Help text
+@link-01: @blue-60; 			       // Primary links. Ghost button
+@inverse-link: @blue-40; 		     // Links on @inverse-02 backgrounds
+@icon-01: @gray-100; 			       // Primary icons
+@icon-02: @gray-70; 			       // Secondary icons
+@icon-03: @white; 			  	     // Icons on interactive colors. Icons on non-ui colors
+@field-01: @gray-10; 		  	     // Default input fields. Fields on @ui-backgrounds
+@field-02: @white; 				       // 'Light' variant input fields. Fields on @ui-02 backgrounds
+@inverse-01: @white; 			       // Inverse text color. Inverse icon color
+@inverse-02: @gray-80; 		  	   // High contrast backgrounds. High contrast element
+@support-01: @red-60; 		  	   // Error
+@support-02: @green-50; 	  	   // Success
+@support-03: @yellow; 		  	   // Warning. Yellow
+@support-04: @blue-70; 			     // Information
+@inverse-support-01: @red-50;    // Danger in high contrast moments
+@inverse-support-02: @green-40;  // Success in high contrast moments
+@inverse-support-03: @yellow; 	 // Warning in high contrast moments
+@inverse-support-04: @blue-50; 	 // Information in high contrast moments
+@overlay-01: @gray-100; 		     // Background overlay. @50%
+
+// Interactive color tokens
+//
+@focus: @blue-60; 				       // Focus border. Focus underline
+@inverse-focus-ui: @white; 		   // Focus on high contrast moments
+@hover-primary: @blue-60; 		   // @interactive-01 hover
+@hover-primary-text: @blue-70; 	 // @interactive-01 text hover
+@hover-secondary: @gray-80; 	   // @interactive-02 hover
+@hover-tertiary: @blue-60; 		   // @interactive-03 hover, @inverse-01 hover
+@hover-ui: @gray-10; 			       // @ui-01 hover, @ui-02 hover, Transparent background hover
+@hover-selected-ui: @gray-20; 	 // Selected row hover
+@hover-danger: @red-60; 		     // @support-01 hover, Danger hover
+@hover-row: @gray-10; 			     // Row hover
+@inverse-hover-ui: @gray-80; 	   // Hover for @inverse-02
+@active-primary: @blue-80;		   // @interactive-01 active
+@active-secondary: @gray-60; 	   // @interactive-02 active, @inverse-01 active
+@active-tertiary: @blue-80;		   // @interactive-03 active
+@active-ui: @gray-30;			       // @ui-01 active, @ui-02 active
+@active-danger: @red-80;		     // @support-01 active, Danger active
+@selected-ui: @gray-20; 		     // Selected UI elements
+@highlight: @blue-20;			       // @interactive-01 highlight
+@skeleton-01: @gray-10; 	       // Skeleton state of graphics
+@skeleton-02: @gray-30; 		     // Skeleton state of texts
+@visited-link: @purple-60; 		   // Visited links
+@disabled-01: @gray-10; 		     // Disabled fields, backgrounds, border
+@disabled-02: @gray-30; 		     // Disabled elements and text on @disabled-01, label, icons, border
+@disabled-03: @gray-50; 		     // Disabled text and icons on @disabled-02
+
+// Spacing and Layout Scales
+//
+@spacing-01: 2px;
+@spacing-02: 4px;
+@spacing-03: 8px;
+@spacing-04: 12px;
+@spacing-05: 16px;
+@spacing-06: 24px;
+@spacing-07: 32px;
+@spacing-08: 40px;
+@spacing-09: 48px;
+
+@spacing-3xs: 2px;
+@spacing-2xs: 4px;
+@spacing-xs: 8px;
+@spacing-sm: 12px;
+@spacing-md: 16px;
+@spacing-lg: 24px;
+@spacing-xl: 32px;
+@spacing-2xl: 40px;
+@spacing-3xl: 48px;
+
+@layout-01: 16px;
+@layout-02: 24px;
+@layout-03: 32px;
+@layout-04: 48px;
+@layout-05: 64px;
+@layout-06: 96px;
+@layout-07: 160px;
+
+@layout-2xs: 16px;
+@layout-xs: 24px;
+@layout-sms: 32px;
+@layout-md: 48px;
+@layout-lg: 64px;
+@layout-xl: 96px;
+@layout-2xl: 160px;
+
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+//
+// Media sizes
+
+@sm: ~"(min-width: 320px)";
+@md: ~"(min-width: 672px)";
+@lg: ~"(min-width: 1056px)";
+@xlg: ~"(min-width: 1312px)";
+@max: ~"(min-width: 1584px)";
+@open:open;
+@font-face{
+  font-family: @open;
+  src: url("/font/OpenSans-VariableFont_wdth,wght.ttf");
+}
+:root,body{
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.name{
+  font: @open;
+  font-weight: lighter;
+  text-rendering: geometricPrecision;
+  font-size: 3.3rem;
+  
+}
+#lungu:hover{
+  color:#1F61B4;
+  }
+  .name-container{
+    align-self: center;
+    align-content: center;
+    text-align:center;
+    justify-content: space-around;
+    text-rendering: optimizeLegibility;
+    padding: 1ch;
+  }
+
+
+.description{
+  padding: 2ch;
+  text-justify: inter-cluster;
+  word-spacing: 0.21ch;
+}
+
+//mobile
+      @media (max-width: 768px) {
+        body{
+          flex-direction: column;
+          flex-flow: column;
+        }
+        header{
+          width: 100vw;
+        }
+        .img{
+          width: 50vw;
+          height:50vh;
+          background-color: .000000;
+        }
+        .heading-container{
+          padding: 0.5ch/2;
+        }
+        .heading{
+font-weight: lighter;
+text-rendering:optimizeLegibility;
+          font-family: open;
+          font-size: 2.1rem;
+        }
+        .content-container{
+          height: 70vh;
+          text-align: justify;
+          text-justify: kashida;
+          font-size: 1.5em;
+          background-color: @white;
+        }
+      
+        blockquote{
+          font-size: 8pt;
+        }
+        cite{
+          color :@gray-100;
+        }
+        .projects {
+          flex-direction: column;
+        }
+        main{
+          min-height: 100vh;
+          scroll-behavior: smooth;
+         
+          flex-flow: column;
+        }
+        .card1{
+          width: 90vw;
+          height: auto;
+        }
+        .card-img{
+          width: 90vw;
+          height: 35vh;
+          background-color: #3D3D41;
+        }.project-title{
+          font-size:2.6rem;
+        }
+        
+      }
+      .projects{
+        display:flex;
+        
+     align-items: center;
+     align-self: center ;
+        
+        
+      }
+      .circle{
+        width: 40vw;
+        height:25vh;
+        
+        border-radius:50%;
+                
+background-color: rgba(31, 97, 180, 1);
+        
+      }
+      .semi-circle{
+        border-top-color: rgba(31, 97, 180, 1);
+        
+       border-top: 3px solid rgba(31, 97, 180, 1)*2;
+       border-radius: 50%;
+       
+      }
+      .card1{
+        border: 1px solid #000;
+        transition: border 0.91s;
+        
+      }
+      .card1:hover{
+        border: 0.2em solid #000;
+        border-radius:2.2pt        
+
+      }
+      footer{
+        width: 100vw;
+        height: 80vh;
+        align-content: center;
+        align-items: center;
+        align-self: center;
+        text-align: center;
+        text-anchor: center;
+        background-color: rgba(33, 83, 151, 0.91)*1.4
+        
+      }footer div {
+        padding-top: 30vh;
+        
+      }
+      a{
+        color: @link-01;
+      }
+      .white{
+        background-color: #fff;
+        width: 100vw;
+        height: 10vh;
+      }      .white-02{
+        background-color: #fff;
+        width: 100vw;
+        height: 30vh;
+      }
+      .board{
+        width: 100vw;
+        height: auto;
+        display: inline-flex;
+        align-content: center;
+        justify-content: space-around;
+      }
+      canvas{
+        width: 100vw;
+      }
