@@ -1,0 +1,22 @@
+.img{
+  background-image: url("/images/bg.jpg");
+  width: 100vw;
+  height: 99vh;
+ position: absolute ;
+  background-size: cover;
+  z-index: -1;
+  background-repeat: no-repeat;
+}
+.profile{
+  width: 40vw;
+  border-radius: 45%;
+  margin-left: 30vw;
+}
+.profile-Container{
+  display: flex;
+  width: 100vw;
+  height:auto;
+  align-content: center;
+  align-self: center;
+  align-items: center ;
+}
